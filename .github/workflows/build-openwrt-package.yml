@@ -11,7 +11,7 @@ on:
         
 env:
   # 这里填入你的SDK的地址，在https://downloads.openwrt.org/releases/中找到你的OpenWRT版本的SDK
-  SDK_URL: https://codeload.github.com/coolsnowwolf/lede/zip/refs/heads/master
+  SDK_URL: https://downloads.openwrt.org/snapshots/targets/ramips/mt7620/openwrt-sdk-ramips-mt7620_gcc-12.2.0_musl.Linux-x86_64.tar.xz
   # 这里填入你的设备的配置文件
   CONFIG_FILE: device/mipsel_24kc.config
   # 这里填入要编译包的信息
