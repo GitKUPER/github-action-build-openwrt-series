@@ -11,12 +11,12 @@ on:
         
 env:
   # 这里填入你的SDK的地址，在https://downloads.openwrt.org/releases/中找到你的OpenWRT版本的SDK
-  SDK_URL: https://downloads.openwrt.org/releases/22.03.2/targets/x86/64/openwrt-sdk-22.03.2-x86-64_gcc-11.2.0_musl.Linux-x86_64.tar.xz
+  SDK_URL: https://downloads.x-wrt.com/rom/sdk/x-wrt-sdk-22.10_b202302190944-ramips-mt7620_gcc-12.2.0_musl.Linux-x86_64.tar.xz
   # 这里填入你的设备的配置文件
-  CONFIG_FILE: device/x86-64.config
+  CONFIG_FILE: device/mipsel_24kc.config
   # 这里填入要编译包的信息
-  PACKAGE_REPO: https://github.com/yichya/luci-app-xray.git
-  PACKAGE_NAME: luci-app-xray
+  PACKAGE_REPO: https://github.com/fw876/helloworld.git
+  PACKAGE_NAME: luci-app-ssr-plus
   PACKAGE_BRANCH: master
   # 下方参数保持默认即可
   TZ: Asia/Shanghai
