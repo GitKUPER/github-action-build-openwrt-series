@@ -45,7 +45,7 @@ jobs:
     - name: Download OpenWRT SDK
       working-directory: /workdir
       run: |
-        wget $SDK_URL -O sdk.tar.xz --no-check-certificate
+        wget --no-check-certificate $SDK_URL -O sdk.tar.xz
         mkdir src
         tar -xf sdk.tar.xz -C src --strip-components 1
         ln -sf /workdir/src $GITHUB_WORKSPACE/src
